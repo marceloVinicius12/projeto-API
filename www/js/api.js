@@ -3,7 +3,7 @@ $("#btn").on("click", function(){
     var numCep = $("#CEP").val();
     var url = "https://viacep.com.br/ws/"+numCep+"/json";
     document.querySelector("#numero").innerHTML = numero
-    numero.classList.add("paciente-invalido")
+    numero.classList.add("numeroNecessesario")
     
     $.ajax({
         url: url,
